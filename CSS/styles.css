@@ -1,0 +1,293 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+ 
+
+    scroll-behavior: smooth;
+}
+
+.center{
+
+  margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.img{
+    width: 30px;
+    
+}
+
+.header{
+
+    background-color: black;
+    padding: 20px 0;
+    border-bottom:  1px solid red;
+
+}
+
+.titulo{
+
+color:red;
+font-weight: bold;
+
+
+
+
+}
+
+.menu a{
+
+color:red;
+text-decoration: none;
+display: inline-block;
+margin-right: 20px;
+
+
+
+}
+
+
+
+.titulo h2{
+
+font-weight: normal;
+font-size: 22px;
+
+
+
+
+}
+
+.menu .btn-menu{
+
+background-color: red ;
+display: inline-block;
+padding: 8px 16px;
+color: white;
+border-radius: 8px;
+
+
+}
+.menu .btn-menu:hover{
+
+    background-color: rgb(77, 0, 0);
+    color: white;
+
+}
+
+.menu{
+
+    width: 80%;
+    text-align: right;
+
+
+}
+
+
+
+.principal{
+
+    background-image: url(/Imgs/twd.jpg);
+    padding: 150px 0  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+.gameTitle{
+
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.gameTitle h2{
+
+    color: black;
+    font-size: 40px;
+    
+
+}
+
+.gameTitle p{
+
+color: black;
+font-size: 19px;
+margin: 10px 0;
+
+}
+
+.gameTitle button{
+
+background-color: red;
+display: inline-block;
+padding: 8px 30px;
+color: white;
+border-radius: 6px;
+font-size: 16px;
+border: 0;
+cursor: pointer;
+margin-bottom: 25px;
+
+
+
+}
+
+.gameTitle button:hover{
+    background-color: rgb(77, 0, 0);
+    color: white;
+
+}
+.cardsGame{
+
+    display: flex;
+
+   
+
+
+}
+
+.diferencial{
+
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    margin-right: 2%;
+    padding: 50px, 20px;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 3px solid rgba(227, 22, 22, 0.264);
+    color: white;
+    
+   
+   
+
+}
+
+.diferencial h2{
+
+    color: black;
+    margin: 10px 0 ;
+    font-size: 17px;
+    text-align:center;
+    font-weight: bold;
+
+
+
+}
+
+.diferencial p{
+
+    color: black;
+    font-size: 14px;
+    text-align:center;
+    font-weight: 900;
+
+
+}
+
+
+.sobre{
+
+    padding: 80px 0 ;
+    background-image: url(/Imgs/blood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    
+
+
+}
+
+.cardsGame{
+text-align: center;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.conteudo-sobre{
+    display: flex;
+    
+}
+.game-sobre p{
+
+color: white;
+font-size: 14px;
+margin: 10px 0;
+text-align: center;
+margin: 10px 0 ;
+
+}
+
+.conteudo-sobre{
+
+font-size: 14px;
+color: black;
+flex-wrap: wrap;
+width: 100%;
+margin:  20px 20px;
+
+
+}
+
+.conteudo-sobre p{
+
+   width: 48%;
+   margin-right: 2%;
+   text-align: justify;
+   color: white;
+   
+
+}
+
+.game-sobre h2{
+
+text-transform: uppercase;
+color: white;
+}
+
+.footer{
+
+width: 100%;
+color: white;
+height: 50px;
+background-color: black;
+border-top: 2px solid red;
+
+}
+
+.footer p{
+
+    display: flex;
+    justify-content: center;
+    padding-top:  15px;
+
+}
+
+button a{
+ 
+    text-decoration: none;
+
+
+}
