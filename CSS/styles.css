@@ -157,6 +157,7 @@ margin-bottom: 25px;
 .cardsGame{
 
     display: flex;
+    
 
    
 
@@ -223,6 +224,7 @@ text-align: center;
 width: 100%;
 display: flex;
 justify-content: space-evenly;
+margin-left: 25px;
 
 }
 
