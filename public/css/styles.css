@@ -98,7 +98,7 @@ border-radius: 8px;
 
 .principal{
 
-    background-image: url(/Imgs/twd.jpg);
+    background-image: url(/public/assets/imgs/twd.jpg);
     padding: 150px 0  ;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,7 +175,7 @@ margin-bottom: 25px;
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
     border-radius: 10px;
-    border: 3px solid rgba(227, 22, 22, 0.264);
+    border: 3px solid rgba(0, 0, 0, 0.466);
     color: white;
     
    
@@ -209,7 +209,7 @@ margin-bottom: 25px;
 .sobre{
 
     padding: 80px 0 ;
-    background-image: url(/Imgs/blood.jpg);
+    background-image: url(/public/assets/imgs/blood.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -291,5 +291,12 @@ button a{
  
     text-decoration: none;
 
+
+}
+
+.img-home img{
+
+
+border-radius: 20px;
 
 }
