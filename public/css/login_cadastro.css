@@ -1,0 +1,205 @@
+.body-cadastro{
+        margin:0;
+        padding: 0;
+        font-family: 'barlow' sans-serif;
+        background-image: url(/assets/imgs/clem-aj.jpg);
+        background-position:right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+     
+      
+        
+        }
+        
+   
+    .card-cadastro{
+        color: #000000;
+        width: 400px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.059);
+        backdrop-filter: blur(3.0px);
+        border: 1px solid red;
+   
+      }
+    
+    
+    
+    .container-cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        
+       }
+    
+    
+    .card-cadastro h2{
+    
+        
+        padding: 20px;
+       }
+    
+    .form{
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width: 250px;
+    
+    }
+    
+    .form span {
+    
+    
+    font-weight: 700;
+    padding: 3px;
+    }
+    
+    .form input{
+    
+        outline: 1px solid red;
+        padding: 5px;
+        border: 0;
+        border-radius: 10px;
+        
+    }
+    
+    .form button{
+    
+    margin-top: 20px;
+    background-color: #e60000;
+    color: #fff;
+    padding: 10px 15px;
+    width: 120px;
+    align-self: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    }
+    
+    
+     .btn:hover{
+        background-color: #000000;
+        
+        
+        }
+    
+      .footer{
+
+
+    color: white;
+    background-color: black;
+    border-top: 2px solid red;
+    margin-top: 150px;
+    
+    }
+    
+    .footer p{
+    
+        display: flex;
+        justify-content: center;
+        padding-top:  15px;
+    
+    }
+
+
+
+
+    
+    /* Login */
+
+
+    .header-login{
+
+        
+
+            background-color: black;
+            padding: 20px 0;
+            border-bottom:  1px solid red;
+           
+        }
+
+
+    
+   
+    .container-login{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        
+  
+  
+      }
+
+    .body-login{
+        margin:0;
+        padding: 0;
+        font-family: 'barlow' sans-serif;
+        background-image: url(/assets/imgs/blood.jpg);
+        background-position: center;
+    
+       
+        
+        
+        }
+
+  
+
+         
+   .card-login{
+    
+  color: #fff;
+  font-weight: 600;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(3.0px);
+    border: 1px solid red
+    
+      }
+
+      h3{
+
+        font-size: 16px;
+        margin-top: 10px;
+        
+
+      }
+
+      h3 a{
+
+        text-decoration: none;
+        color: #e60000;
+        font-weight: 800;
+
+
+      }
+
+     .btn a{
+
+
+      text-decoration: none;
+      color: white;
+     }
+
+     .card-login h2{
+    
+        
+      padding: 20px;
+     }
+  

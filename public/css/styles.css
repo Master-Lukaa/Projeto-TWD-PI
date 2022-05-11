@@ -98,7 +98,7 @@ border-radius: 8px;
 
 .principal{
 
-    background-image: url(/public/assets/imgs/twd.jpg);
+    background-image: url(/assets/imgs/twd.jpg);
     padding: 150px 0  ;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,9 +187,10 @@ margin-bottom: 25px;
 
     color: black;
     margin: 10px 0 ;
-    font-size: 17px;
+    font-size: 20px;
     text-align:center;
     font-weight: bold;
+    font-weight: 1000;
 
 
 
@@ -198,9 +199,9 @@ margin-bottom: 25px;
 .diferencial p{
 
     color: black;
-    font-size: 14px;
+    font-size: 15px;
     text-align:center;
-    font-weight: 900;
+    font-weight: 1000;
 
 
 }
@@ -209,7 +210,7 @@ margin-bottom: 25px;
 .sobre{
 
     padding: 80px 0 ;
-    background-image: url(/public/assets/imgs/blood.jpg);
+    background-image: url(/assets/imgs/blood.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
