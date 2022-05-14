@@ -2,7 +2,7 @@
         margin:0;
         padding: 0;
         font-family: 'barlow' sans-serif;
-        background-image: url(/assets/imgs/clem-aj.jpg);
+        background-image: url(../Imgs/blood.jpg);
         background-position:right;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -14,7 +14,7 @@
         
    
     .card-cadastro{
-        color: #000000;
+        color: #fff;
         width: 400px;
         height: 460px;
         display: flex;
@@ -145,8 +145,9 @@
         margin:0;
         padding: 0;
         font-family: 'barlow' sans-serif;
-        background-image: url(/assets/imgs/blood.jpg);
+        background-image: url(../Imgs/blood.jpg);
         background-position: center;
+        background-size: cover;
     
        
         

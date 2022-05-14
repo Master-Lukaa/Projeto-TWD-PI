@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWD | Login</title>
-
-    <link rel="stylesheet" href="/CSS/login_cadastro.css">
-    <link rel="stylesheet" href="/CSS/styles.css">
-    <link rel="shortcut icon" href="/Imgs/zumbi.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="CSS/login_cadastro.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+     <link rel="shortcut icon" href="Imgs/zumbi.png" type="image/x-icon">
+     <script src="JS/funcoes.js"></script>
+     <script src="JS/login.js">  </script>
+    
 <body class="body-login">
 
     <div class="header-login">
@@ -31,15 +32,20 @@
 
     
         <div class="container-login"> 
+            <div class="alerta_erro">
+                <div class="card_erro" id="cardErro">
+                    <span id="mensagem_erro"></span>
+                </div>
+            </div>
            <div class="card-login"><h2>Bem vindo de volta!</h2>
             
                 <div class="form login">
                    
                     <span>E-mail:</span>
-                    <input id="email_input" type="text" placeholder="Login">
+                    <input id="email_input" type="text">
 
                     <span >Senha:</span>
-                    <input id="senha_input" type="password" placeholder="******">
+                    <input id="senha_input" type="password">
 
                     <button class="btn" onclick="entrar()">Entrar</button>
                     <h3>Não possui conta? <a href="cadastro.html"> Crie agora</a></h3>
@@ -48,13 +54,85 @@
                
                 </div>
             </div>
-        </div>
+            <div id="div_aguardar" class="loading-div">
+                <img src="Imgs/loading.gif" id="loading-gif">
+            </div>
+            
+            <div id="div_erros_login">
+            </div>
+            
        
 
-        <div class="footer">
+      
+        
+        <script>
 
-            <p>By Lucas Alencar 2022 &copy;</p>
+ function entrar() {
+                aguardar();
         
-        </div>
+                var emailVar = email_input.value;
+                var senhaVar = senha_input.value;
         
-    <script>
+                if (emailVar == "" || senhaVar == "") {
+                    cardErro.style.display = "block"
+                    mensagem_erro.innerHTML = "Preencha todos os campos";
+                    finalizarAguardar();
+                    return false;
+                }
+                else {
+                    setInterval(sumirMensagem, 5000)
+                }
+        
+                console.log("FORM LOGIN: ", emailVar);
+                console.log("FORM SENHA: ", senhaVar);
+        
+                fetch("/usuarios/autenticar", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        emailServer: emailVar,
+                        senhaServer: senhaVar
+                    })
+                }).then(function (resposta) {
+                    console.log("ESTOU NO THEN DO entrar()!")
+        
+                    if (resposta.ok) {
+                        console.log(resposta);
+        
+                        resposta.json().then(json => {
+                            console.log(json);
+                            console.log(JSON.stringify(json));
+        
+                            sessionStorage.EMAIL_USUARIO = json.email;
+                            sessionStorage.NOME_USUARIO = json.nome;
+                            sessionStorage.ID_USUARIO = json.id;
+                            sessionStorage.ID_SESSAO = (Math.random()*10000).toFixed(0);
+        
+                           
+        
+                        });
+        
+                    } else {
+        
+                        console.log("Houve um erro ao tentar realizar o login!");
+        
+                        resposta.text().then(texto => {
+                            console.error(texto);
+                            finalizarAguardar(texto);
+                        });
+                    }
+        
+                }).catch(function (erro) {
+                    console.log(erro);
+                })
+        
+                return false;
+            }
+        
+            function sumirMensagem() {
+                cardErro.style.display = "none"
+            }
+        
+        </script>
