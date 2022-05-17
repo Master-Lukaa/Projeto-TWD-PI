@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div id="div_aguardar" class="loading-div">
-                <img src="Imgs/loading.gif" id="loading-gif">
+                <img src="Imgs/loading-unscreen.gif" id="loading-gif">
             </div>
             
             <div id="div_erros_login">
@@ -68,7 +68,8 @@
         <script>
 
  function entrar() {
-                aguardar();
+     aguardar();
+                
         
                 var emailVar = email_input.value;
                 var senhaVar = senha_input.value;
@@ -76,10 +77,17 @@
                 if (emailVar == "" || senhaVar == "") {
                     cardErro.style.display = "block"
                     mensagem_erro.innerHTML = "Preencha todos os campos";
-                    finalizarAguardar();
+                    
+
+                } else if(emailVar.indexOf('@') == -1){
+
+                    cardErro.style.display = "block"
+                     mensagem_erro.innerHTML = "Email Inválido, insira o @ para continuar " ;
+
+                     finalizarAguardar();
                     return false;
-                }
-                else {
+
+                }else {
                     setInterval(sumirMensagem, 5000)
                 }
         
@@ -110,17 +118,20 @@
                             sessionStorage.ID_USUARIO = json.id;
                             sessionStorage.ID_SESSAO = (Math.random()*10000).toFixed(0);
         
-                           
-        
+                            setTimeout(function () {
+                        window.location = "./season.html";
+                    }, 1000); 
+
                         });
         
                     } else {
         
-                        console.log("Houve um erro ao tentar realizar o login!");
+                    console.log("Houve um erro ao tentar realizar o login!");
         
                         resposta.text().then(texto => {
                             console.error(texto);
                             finalizarAguardar(texto);
+                           
                         });
                     }
         

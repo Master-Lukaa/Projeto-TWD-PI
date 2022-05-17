@@ -307,7 +307,8 @@ border-radius: 20px;
 .alerta_erro{
   
   display: flex;
-  justify-content: flex-start;
+ margin-right: 10px;
+
   }
   
   .card_erro {
@@ -318,7 +319,7 @@ border-radius: 20px;
     border-radius: 4px;
     border: #e60000 3px solid;
     padding: 10px;
-    margin-right: 10%;
+    margin-left: 10%;
     background: rgba(255, 255, 255, 0.159);
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
@@ -330,12 +331,12 @@ border-radius: 20px;
   }
   
   .loading-div {
-    width: 50px;
+    width: 100px;
     margin: auto;
     display: none;
   }
   
   .loading-div img {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
   }

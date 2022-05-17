@@ -1,6 +1,42 @@
+function validarSessao() {
+
+
+    var email = sessionStorage.EMAIL_USUARIO;
+    var nome = sessionStorage.NOME_USUARIO;
+    var idSessao = sessionStorage.ID_SESSAO;
+
+    var h1LoginUsuario = document.getElementById("h1_login_usuario");
+
+    if (email != null && nome != null) {
+      
+        if (h1LoginUsuario != undefined) {
+            h1LoginUsuario.innerHTML = email;
+        }
+        b_usuario.innerHTML = nome;
+        b_id_sessao.innerHTML = idSessao;
+
+      
+    } else {
+        window.location = "../login.html";
+    }
+}
+
+function limparSessao() {
+    
+    sessionStorage.clear();
+    window.location = "../login.html";
+}
+
+
+
+
+
 /*  Mostrar cards */
+
+mostrarSeason();
+
 function mostrarSeason() {
-  var temp =  document.querySelector("#season");
+  var temp =  document.querySelector("#seasons") ;
   var qtdTemp = 4;
 
   var imgTemp = ["Imgs/season1.jpg","Imgs/season2.jpg","Imgs/season3.jpg","Imgs/season4.jpg",];
@@ -26,37 +62,10 @@ for (var cont = 0; cont < qtdTemp; cont++) {
   }
 }
 
-// sessão
-function validarSessao() {
-    // aguardar();
-
-    var email = sessionStorage.EMAIL_USUARIO;
-    var nome = sessionStorage.NOME_USUARIO;
-    var idSessao = sessionStorage.ID_SESSAO;
-
-    var h1LoginUsuario = document.getElementById("h1_login_usuario");
-
-    if (email != null && nome != null) {
-        // window.alert(`Seja bem-vindo, ${nome}!`);
-        if (h1LoginUsuario != undefined) {
-            h1LoginUsuario.innerHTML = email;
-        }
-        b_usuario.innerHTML = nome;
-        b_id_sessao.innerHTML = idSessao;
-
-        // finalizarAguardar();
-    } else {
-        window.location = "../login.html";
-    }
+function aguardar() {
+    var divAguardar = document.getElementById("div_aguardar");
+     divAguardar.style.display = "flex";
 }
-
-function limparSessao() {
-    // aguardar();
-    sessionStorage.clear();
-    // finalizarAguardar();
-    window.location = "../login.html";
-}
-
 
 
 function finalizarAguardar(texto) {
@@ -68,8 +77,6 @@ function finalizarAguardar(texto) {
         divErrosLogin.innerHTML = texto;
     }
 }
-
-
 
 
 
