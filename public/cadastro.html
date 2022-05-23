@@ -7,6 +7,7 @@
     <title>TWD | Cadastro</title>
 
 
+
     <script src="JS/funcoes.js"></script>
     <link rel="stylesheet" href="CSS/login_cadastro.css">
     <link rel="stylesheet" href="CSS/styles.css">
@@ -44,20 +45,20 @@
 
            <div class="card-cadastro"><h2>Seja Bem vindo!</h2>
                 <div class="form">
-                    <span >Nome:</span>
-                    <input id="nome_input" type="text" >
+                    <span > Nome:</span>
+                    <input class="name" id="nome_input" type="text" >
 
                     <span >E-mail:</span>
-                    <input id="email_input" type="email" >
+                    <input class="emails" id="email_input" type="email" >
 
                     <span >Telefone:</span>
-                    <input id="telefone_input" type="tel" >
+                    <input class="telefone" id="telefone_input" type="tel" >
 
                     <span >Senha:</span>
-                    <input id="senha_input" type="password" >
+                    <input class="senha" id="senha_input" type="password" >
 
                     <span >Confirme sua senha:</span>
-                    <input id="confirmacao_senha_input" type="password" >
+                    <input class="senha" id="confirmacao_senha_input" type="password" >
 
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
                     <h3>Já possui conta? <a href="login.html"> Entre agora</a></h3>
@@ -69,8 +70,8 @@
 
 </div>
 
-<div id="div_aguardar" class="loading-div">
-    <img src="Imgs/loading.gif" id="loading-gif">
+<div id="div_aguardar">
+   
 </div>
 
 <div id="div_erros_login">
@@ -112,10 +113,8 @@
             return false;
 
         } else {
-            setInterval(sumirMensagem, 5000)
-        }
-
-        // Enviando o valor da nova input
+            
+    // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
             method: "POST",
             headers: {
@@ -161,5 +160,6 @@
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
-
+    }
+    
 </script>

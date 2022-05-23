@@ -28,39 +28,65 @@ function limparSessao() {
 }
 
 
-
-
-
 /*  Mostrar cards */
 
-mostrarSeason();
+var qtdTemporada = 4;
+
+var imgTemporada = [
+    "../Imgs/season1.jpg",
+    "../Imgs/season2.jpg",
+    "../Imgs/season3.jpg",
+    "../Imgs/season4.jpg",];
+  
+    var seasonName = [
+    "TWD - New Age", 
+    "TWD - Insane",
+    "TWD - New Frontier",
+    "TWD - The Final Season",];
+  
+    var seasonNumber = [
+        "Season One", 
+        "Season Two",
+        "Season Three",
+        "Season Four",];
+  
+        mostrarSeason();
 
 function mostrarSeason() {
-  var temp =  document.querySelector("#seasons") ;
-  var qtdTemp = 4;
-
-  var imgTemp = ["Imgs/season1.jpg","Imgs/season2.jpg","Imgs/season3.jpg","Imgs/season4.jpg",];
-
-  var seasonName= ["TWD - New Age", "TWD - Insane","TWD - New Frontier","TWD - The Final Season",];
-
-  var seasonNumber= ["Season One", "Season Two","Season Three","Season Four",];
-
-for (var cont = 0; cont < qtdTemp; cont++) {
-    temp.innerHTML += `
-<div class="card">
-<div class="card-header">
-      <img src='${imgTemp[cont]}' class="card-img"/>
+  var temporada =  document.querySelector("#seasons") ;
+  
+for (var cont = 0; cont < qtdTemporada; cont++) {
+    temporada.innerHTML += `
+<div class="card-temporada">
+<div class="card-header" onclick="curtir()">
+      <img src='${imgTemporada[cont]}' class="card-img"/>
       </div>
        <div class="card-body">
         <h2 class="card-titulo">${seasonNumber[cont]}</h2>
         <h3>${seasonName[cont]}</h3>
        </div>
-      <div class="card-footer"><a href="#">Curtir</a>
+      <div class="card-footer">
       </div>
       </div>`
 
   }
+} 
+
+/* Curtir */
+
+function curtir(){
+    
+    
+
+   
+    
+
+
+
 }
+
+
+
 
 function aguardar() {
     var divAguardar = document.getElementById("div_aguardar");
@@ -77,8 +103,6 @@ function finalizarAguardar(texto) {
         divErrosLogin.innerHTML = texto;
     }
 }
-
-
 
 
 

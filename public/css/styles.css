@@ -2,9 +2,8 @@
 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+ 
 }
 
 html{
@@ -15,8 +14,8 @@ html{
 
 .center{
 
-  margin: 0 auto;
-    padding: 0 2%;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,7 +31,7 @@ html{
 
     background-color: black;
     padding: 20px 0;
-    border-bottom:  1px solid red;
+    border-bottom:  2px solid red;
 
 }
 
@@ -50,7 +49,6 @@ font-weight: bold;
 
 color:red;
 text-decoration: none;
-display: inline-block;
 margin-right: 20px;
 
 
@@ -190,7 +188,7 @@ margin-bottom: 25px;
     font-size: 20px;
     text-align:center;
     font-weight: bold;
-    font-weight: 1000;
+    font-weight: 700;
 
 
 
@@ -201,7 +199,7 @@ margin-bottom: 25px;
     color: black;
     font-size: 15px;
     text-align:center;
-    font-weight: 1000;
+    font-weight: 700;
 
 
 }
@@ -247,9 +245,9 @@ margin: 10px 0 ;
 
 font-size: 14px;
 color: black;
-flex-wrap: wrap;
 width: 100%;
 margin:  20px 20px;
+
 
 
 }
@@ -307,7 +305,7 @@ border-radius: 20px;
 .alerta_erro{
   
   display: flex;
- margin-right: 10px;
+  margin-right: 10px;
 
   }
   
@@ -340,3 +338,43 @@ border-radius: 20px;
     height: 80px;
     width: 80px;
   }
+
+
+.video{
+
+    margin-left:370px;
+     border-radius: 30px;
+    
+
+}
+
+.video iframe{
+
+    border-radius: 30px;
+    width: 700px;
+    height: 400px;
+
+    
+}
+
+.img-jogabilidade{
+
+    margin-left: 60px;
+    justify-content: space-around;
+    padding-right: 20px;
+    
+   
+}
+
+
+.btn-acao{
+
+text-decoration: none;
+color: white;
+
+
+} .img-jogabilidade{
+
+
+    border-radius: 40px;
+}

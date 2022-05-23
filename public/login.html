@@ -37,15 +37,15 @@
                     <span id="mensagem_erro"></span>
                 </div>
             </div>
-           <div class="card-login"><h2>Bem vindo de volta!</h2>
+           <div class="card-login"><h2>Entra ai amigo!</h2>
             
                 <div class="form login">
                    
                     <span>E-mail:</span>
-                    <input id="email_input" type="text">
+                    <input class="emails" id="email_input" type="text">
 
                     <span >Senha:</span>
-                    <input id="senha_input" type="password">
+                    <input class="senha" id="senha_input" type="password">
 
                     <button class="btn" onclick="entrar()">Entrar</button>
                     <h3>Não possui conta? <a href="cadastro.html"> Crie agora</a></h3>
@@ -119,7 +119,7 @@
                             sessionStorage.ID_SESSAO = (Math.random()*10000).toFixed(0);
         
                             setTimeout(function () {
-                        window.location = "./season.html";
+                        window.location = "dashboard/cards.html";
                     }, 1000); 
 
                         });

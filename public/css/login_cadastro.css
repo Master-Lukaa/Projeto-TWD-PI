@@ -12,8 +12,7 @@
         
         }
         
-   
-    .card-cadastro{
+ .card-cadastro{
         color: #fff;
         width: 400px;
         height: 460px;
@@ -28,9 +27,7 @@
    
       }
     
-    
-    
-    .container-cadastro{
+   .container-cadastro{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,7 +53,6 @@
     
     .form span {
     
-    
     font-weight: 700;
     padding: 3px;
     }
@@ -64,10 +60,42 @@
     .form input{
     
         outline: 1px solid red;
-        padding: 5px;
+        padding:5px;
         border: 0;
         border-radius: 10px;
+        padding-left: 25px;
+      
+      
         
+    }
+
+    .name{
+
+      background-image: url(../Imgs/nome-24.png);
+      background-repeat: no-repeat;
+
+    }
+
+    .emails{
+      background-image: url(../Imgs/email-aberto-24.png);
+      background-repeat: no-repeat;
+      
+    }
+
+ 
+
+    .telefone{
+      background-image: url(../Imgs/telefone-sem-uso-24.png);
+      background-repeat: no-repeat;
+      
+
+    }
+
+    .senha{
+
+      background-image: url(../Imgs/cadeado-2-24.png);
+      background-repeat: no-repeat;
+
     }
     
     .form button{
@@ -110,27 +138,17 @@
     
     }
 
-
-
-
-    
     /* Login */
 
+.header-login{
 
-    .header-login{
-
-        
-
-            background-color: black;
-            padding: 20px 0;
-            border-bottom:  1px solid red;
+background-color: black;
+ padding: 20px 0;
+ border-bottom:  1px solid red;
            
         }
-
-
-    
-   
-    .container-login{
+        
+        .container-login{
     
         display: flex;
         justify-content: center;
@@ -149,15 +167,8 @@
         background-position: center;
         background-size: cover;
     
-       
-        
-        
-        }
-
-  
-
-         
-   .card-login{
+      }
+  .card-login{
     
   color: #fff;
   font-weight: 600;
