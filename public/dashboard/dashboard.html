@@ -41,7 +41,7 @@
            
 
     <div class="btn-nav-white">
-        <a href="cards.html">
+        <a href="./homeDash.html">
             <h3>Home</h3>
         </a>
     </div>
@@ -124,20 +124,20 @@ verificar_autenticacao();
 
   //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
   //     Para ajustar o "select", ajuste o comando sql em src/models
-  function obterDadosGrafico(brabo) {
+  function obterDadosGrafico(protagonista) {
     
 
     if (proximaAtualizacao != undefined) {
       clearTimeout(proximaAtualizacao);
     }
 
-    fetch(`/medidas/ultimas/${brabo}`, { cache: 'no-store' }).then(function (response) {
+    fetch(`/medidas/ultimas/${protagonista}`, { cache: 'no-store' }).then(function (response) {
       if (response.ok) {
         response.json().then(function (resposta) {
           console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
           // resposta.reverse();
 
-          plotarGrafico(resposta, brabo);
+          plotarGrafico(resposta, protagonista);
         });
       } else {
         console.error('Nenhum dado encontrado ou erro na API');
@@ -151,7 +151,7 @@ verificar_autenticacao();
   // Esta função *plotarGrafico* usa os dados capturados na função anterior para criar o gráfico
   // Configura o gráfico (cores, tipo, etc), materializa-o na página e, 
   // A função *plotarGrafico* também invoca a função *atualizarGrafico*
-  function plotarGrafico(resposta, brabo) {
+  function plotarGrafico(resposta, protagonista) {
     console.log('iniciando plotagem do gráfico...');
 
     var dados = {
@@ -245,7 +245,7 @@ verificar_autenticacao();
 
 
 
-    setTimeout(() => atualizarGrafico(brabo, dados), 5000);
+    setTimeout(() => atualizarGrafico(protagonista, dados), 2000);
   
 
 
@@ -254,9 +254,9 @@ verificar_autenticacao();
 
   //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
   //     Para ajustar o "select", ajuste o comando sql em src/models
-  function atualizarGrafico(brabo, dados) {
+  function atualizarGrafico(protagonista, dados) {
 
-    fetch(`/medidas/tempo-real/${brabo}`, { cache: 'no-store' }).then(function (response) {
+    fetch(`/medidas/tempo-real/${protagonista}`, { cache: 'no-store' }).then(function (response) {
       if (response.ok) {
         response.json().then(function (novoRegistro) {
 
@@ -282,12 +282,12 @@ verificar_autenticacao();
           window.grafico_linha.updtae();
 
           // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-          proximaAtualizacao = setTimeout(() => atualizarGrafico(brabo, dados), 2000);
+          proximaAtualizacao = setTimeout(() => atualizarGrafico(protagonista, dados), 2000);
         });
       } else {
         console.error('Nenhum dado encontrado ou erro na API');
         // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-        proximaAtualizacao = setTimeout(() => atualizarGrafico(brabo, dados), 2000);
+        proximaAtualizacao = setTimeout(() => atualizarGrafico(protagonista, dados), 2000);
       }
     })
       .catch(function (error) {

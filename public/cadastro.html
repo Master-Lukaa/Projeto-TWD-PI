@@ -102,10 +102,10 @@
         var telefoneVar = telefone_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-        var braboVar = brabos.value
+        var protagonistaVar = brabos.value
      
 
-        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || braboVar == "") {
+        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || protagonistaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos" ;
 
@@ -142,7 +142,7 @@
                 emailServer: emailVar,
                 telefoneServer: telefoneVar,
                 senhaServer: senhaVar,
-                braboServer: braboVar
+                protagonistaServer: protagonistaVar
             })
         }).then(function (resposta) {
 

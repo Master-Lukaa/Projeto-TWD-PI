@@ -4,120 +4,6 @@
 
 }
 
-.dashboards{
-
-background-image: url(../Imgs/twdcova.jpg) ;
-background-size: 135%;
-margin-bottom: 200px;
-
-}
-
-.dash-right .avisos {
-  width: 100%;
-  /* border: 3px solid pink; */
-  color: rgb(216, 216, 216);
-  font-family: "Exo 2", sans-serif;
-
-}
-
-.dash-right .avisos .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dash-right .avisos .container .div-form {
-  width: 100%;
-}
-
-
-.div-form{
-
-  margin-left: 220px;
-}
-
-.dash-right .avisos .container .div-form #form_postagem {
-  width: 100%;
-}
-
-.dash-right .avisos .div-form label {
-  width: 100%;
-}
-
-.dash-right .avisos .div-form input {
-  width: 75%;
-  border-radius: 5px;
-}
-
-.dash-right .avisos .div-form textarea {
-  width: 75%;
-  /* color: #E6005A; */
-  border: 3px solid #000000;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.dash-right .avisos .div-form button {
-  cursor: pointer;
-  font-family: "Exo 2", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 15px;
-  color: white;
-  background-color: #e60000;
-  width: 120px;
-}
-
-.publicacao-btn-editar {
-  cursor: pointer;
-  font-family: "Exo 2", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 5px 8px;
-  color: white;
-  background-color: #e60000;
-  width: 80px;
-}
-
-.publicacao {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  border-bottom: 3px solid #0000001a;
-  padding: 20px;
-  background: rgba(250, 9, 9, 0.403);
-  backdrop-filter: blur(10.0px);
-}
-
-.publicacao > *:not(:last-child) {
-  padding: 0 0 10px 0;
-}
-
-.div-results {
-  width: 100%;
-}
-
-.div-results .feed-container {
-  background-color: #212124;
-  border-radius: 5px;
-  margin-bottom: 80px;
-}
-
-.div-buttons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.div-buttons > * {
-  margin-left: 30px;
-}
 
 /* pagina graficos */
 
@@ -192,14 +78,13 @@ margin-bottom: 200px;
 }
 
 
-
-
 .btns-dash {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
   cursor: pointer;
+  
   
 }
 
@@ -212,7 +97,7 @@ margin-bottom: 200px;
 
 #canvas_grafico1{
 
-  background-color: rgba(255, 255, 255, 0.667);
+  background-color: rgba(255, 255, 255, 0.759);
   border-radius: 10px;
 
 }
@@ -221,7 +106,7 @@ margin-bottom: 200px;
 #canvas_grafico2{
   
   
-  background-color: rgba(255, 255, 255, 0.667);
+  background-color: rgba(255, 255, 255, 0.79);
   border-radius: 10px;
   backdrop-filter: blur(2.0px);
 
@@ -246,3 +131,121 @@ margin-bottom: 200px;
   cursor: pointer;
 }
 
+
+
+.dashboards{
+
+background-image: url(../Imgs/twdcova.jpg) ;
+background-size: 135%;
+
+}
+
+.dash-right .avisos {
+  width: 100%;
+  /* border: 3px solid pink; */
+  color: rgb(216, 216, 216);
+  font-family: "Exo 2", sans-serif;
+
+}
+
+.dash-right .avisos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dash-right .avisos .container .div-form {
+  width: 100%;
+}
+
+
+.div-form{
+
+  margin-left: 220px;
+}
+
+.dash-right .avisos .container .div-form #form_postagem {
+  width: 100%;
+}
+
+.dash-right .avisos .div-form label {
+  width: 100%;
+}
+
+.dash-right .avisos .div-form input {
+  width: 75%;
+  border-radius: 5px;
+}
+
+.dash-right .avisos .div-form textarea {
+  width: 75%;
+  /* color: #E6005A; */
+  border: 3px solid #000000;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.dash-right .avisos .div-form button {
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #e60000;
+  width: 120px;
+}
+
+
+/* pagina Comentários */
+
+.publicacao-btn-editar {
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 8px;
+  color: white;
+  background-color: #e60000;
+  width: 80px;
+}
+
+.publicacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border-bottom: 3px solid #0000001a;
+  padding: 20px;
+  background: rgba(250, 9, 9, 0.403);
+  backdrop-filter: blur(10.0px);
+}
+
+.publicacao > *:not(:last-child) {
+  padding: 0 0 10px 0;
+}
+
+.div-results {
+  width: 100%;
+}
+
+.div-results .feed-container {
+  background-color: #212124;
+  border-radius: 5px;
+  margin-bottom: 80px;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-buttons > * {
+  margin-left: 30px;
+}
