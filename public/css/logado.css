@@ -1,13 +1,27 @@
 
-body {
+.home  {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url(../Imgs/blood.jpg);
-  background-size: cover;
+  background-image: url(../Imgs/twd.jpg);
+  background-size: 150%;
+  
+  
   
 }
 
+.editar-aviso{
+  background-image: url(../Imgs/twd2.jpg);
+
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+#form-postagem{
+
+  background-color: rgb(180, 17, 17);
+
+}
 
 .janela {
   display: flex;
@@ -30,8 +44,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-right: 3px solid #fa0011;
-  background-color: #000000;
+  border-right: 3px solid darkred;
+  background-image: url(../Imgs/blood.jpg);
+  background-size: cover;
  
 }
 
@@ -45,8 +60,11 @@ body {
 }
 
 .header-left h1 {
-  color: red;
+  color: white;
+ 
 }
+
+
 
 .hello {
   width: 100%;
@@ -55,7 +73,7 @@ body {
 }
 
 .hello h3 {
-  color: #e27272;
+  color: white;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -113,9 +131,16 @@ body {
  
   width: 100%;
   margin-top: 45px;
- border-radius: 20px;
-  height: 700px;
+  border-radius: 20px;
+  height: 600px;
  
 
 
+}
+
+.mural{
+
+  background-image: url(../Imgs/twdhomee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -297,6 +297,7 @@ button a{
 
 
 border-radius: 20px;
+width: 600px;
 
 }
 
@@ -335,8 +336,8 @@ border-radius: 20px;
   }
   
   .loading-div img {
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
   }
 
 
@@ -377,4 +378,18 @@ color: white;
 
 
     border-radius: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 10px;
 }

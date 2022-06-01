@@ -18,7 +18,7 @@
         rel="stylesheet">
 </head>
 
-<body onload="validarSessao(), listarInfosDeUm()">
+<body class="editar-aviso" onload="validarSessao(), listarInfosDeUm()">
     <!-- <body onload="validarSessao()"> -->
 
     <div class="janela">
@@ -33,8 +33,8 @@
     <div>
   
       <div id="h1_titulo"></div>
-        <h3>Olá, <span id="b_usuario">usuário</span> !</h3>
-        <h3>ID da Sessão: <span id="b_id_sessao">id</span></h3>
+      <h3>Bem vindo(a) <img style="width: 30px;" src="../Imgs/zumbi.png" alt="zombie"> <br> <span id="b_usuario">usuário </span> !  </h3>
+        
   
     </div>
     </div>
@@ -42,7 +42,7 @@
     
     <div class="btn-nav-white">
         <a href="cards.html">
-            <h3>Aquários</h3>
+            <h3>Home</h3>
         </a>
     </div>
 
@@ -97,6 +97,7 @@
                         </label>
                         <br>
                         <button onclick="editar()">Editar</button>
+                        <button onclick="editar()">Voltar</button>
                     </div>
 
                 </div>

@@ -1,0 +1,132 @@
+body{
+
+ margin:0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;;
+    background-image: url(../Imgs/blood.jpg);
+    background-size: cover;
+ 
+   
+  }
+.escolha{
+
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.escolha p{
+
+padding-bottom: 20px;
+margin-bottom: 5%;
+}
+
+
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+   }
+  
+  /* Card */
+  
+  .card-temporada {
+    width: 300px;
+    margin: 25px;
+    background: rgba(255, 255, 255, 0.112);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid red;
+    border-radius: 20px;
+    overflow:hidden;
+    transition: 0.3s;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+   
+  
+   
+ 
+  
+  }
+  
+  /* Card Header*/
+  .card-header {
+    width: 100%;
+    height: 250px;
+   
+  }
+  
+  .card-img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    background-size:cover;
+  }
+  
+  /* Card Body */
+  .card-body {
+    height: 120px;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    
+  }
+  
+
+  .card-titulo {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+  
+  
+  
+  /* Card Footer */
+  .card-footer {
+  
+    text-align: center;
+    background-color: #000;
+  
+  }
+  
+  .card-footer a {
+    color: #fff;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  
+  
+  
+  /* Animação Hover */
+  .card-temporada:hover {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  
+  .hello {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+ .card-footer button{
+   width: 100px;
+   height: 10px;
+   background-color: black;
+   border-style: none;
+   color:  white;
+   cursor: pointer;
+    
+
+
+  }

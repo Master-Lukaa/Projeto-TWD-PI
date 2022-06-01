@@ -3,7 +3,7 @@ function validarSessao() {
 
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
-    var idSessao = sessionStorage.ID_SESSAO;
+    
 
     var h1LoginUsuario = document.getElementById("h1_login_usuario");
 
@@ -13,7 +13,7 @@ function validarSessao() {
             h1LoginUsuario.innerHTML = email;
         }
         b_usuario.innerHTML = nome;
-        b_id_sessao.innerHTML = idSessao;
+     
 
       
     } else {
@@ -26,65 +26,6 @@ function limparSessao() {
     sessionStorage.clear();
     window.location = "../login.html";
 }
-
-
-/*  Mostrar cards */
-
-var qtdTemporada = 4;
-
-var imgTemporada = [
-    "../Imgs/season1.jpg",
-    "../Imgs/season2.jpg",
-    "../Imgs/season3.jpg",
-    "../Imgs/season4.jpg",];
-  
-    var seasonName = [
-    "TWD - New Age", 
-    "TWD - Insane",
-    "TWD - New Frontier",
-    "TWD - The Final Season",];
-  
-    var seasonNumber = [
-        "Season One", 
-        "Season Two",
-        "Season Three",
-        "Season Four",];
-  
-        mostrarSeason();
-
-function mostrarSeason() {
-  var temporada =  document.querySelector("#seasons") ;
-  
-for (var cont = 0; cont < qtdTemporada; cont++) {
-    temporada.innerHTML += `
-<div class="card-temporada">
-<div class="card-header" onclick="curtir()">
-      <img src='${imgTemporada[cont]}' class="card-img"/>
-      </div>
-       <div class="card-body">
-        <h2 class="card-titulo">${seasonNumber[cont]}</h2>
-        <h3>${seasonName[cont]}</h3>
-       </div>
-      <div class="card-footer">
-      </div>
-      </div>`
-
-  }
-} 
-
-/* Curtir */
-
-function curtir(){
-    
-    
-
-   
-    
-
-
-
-}
-
 
 
 
@@ -106,3 +47,72 @@ function finalizarAguardar(texto) {
 
 
 
+
+/*  Mostrar Seasons */
+
+
+
+function mostrarSeason() {
+ 
+    
+var qtdPersonagem = 8;
+var personagem =  document.querySelector("#seasons") ;
+var personagemNumber = [
+    "Clementine", 
+    "Lee Everett ",
+    "Kenny",
+    "Ravier Garcia",
+    "Louis",
+    "Luke",
+    "Michonne",
+    "Kate Garcia",
+   
+   
+ ];
+
+var  imgPersonagem = [
+    "../Imgs/clementine-character.png",
+    "../Imgs/lee-character.png",
+    "../Imgs/ken-character.png",
+    "../Imgs/ravier-character.png",
+    "../Imgs/louis-character.png",
+    "../Imgs/luke-character.png",
+    "../Imgs/michonne-character.png",
+    "../Imgs/kate-character.png",
+  
+     ];
+  
+     var  personagemName = [
+        "1", 
+        "2",
+        "3",     
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+    
+    ];
+  
+  
+  
+for (var  cont = 0; cont < qtdPersonagem; cont++) {
+    personagem.innerHTML += `
+   <div class="card-temporada">
+        <div class="card-header" >
+            <img src='${imgPersonagem[cont]}' class="card-img"/>
+        </div>
+       <div class="card-body">
+        <h2 class="card-titulo">${personagemNumber[cont]}</h2>
+        <h3>${personagemName[cont]}</h3>
+       </div>
+     
+      </div>`
+
+} 
+
+
+
+
+
+}

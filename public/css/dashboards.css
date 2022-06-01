@@ -1,14 +1,23 @@
-*,body {
+* body {
+
   font-family: "Exo 2", sans-serif;
 
 }
 
+.dashboards{
+
+background-image: url(../Imgs/twdcova.jpg) ;
+background-size: 135%;
+margin-bottom: 200px;
+
+}
 
 .dash-right .avisos {
   width: 100%;
   /* border: 3px solid pink; */
   color: rgb(216, 216, 216);
   font-family: "Exo 2", sans-serif;
+
 }
 
 .dash-right .avisos .container {
@@ -20,6 +29,7 @@
 .dash-right .avisos .container .div-form {
   width: 100%;
 }
+
 
 .div-form{
 
@@ -80,8 +90,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #0000001a;
   padding: 20px;
+  background: rgba(250, 9, 9, 0.403);
+  backdrop-filter: blur(10.0px);
 }
 
 .publicacao > *:not(:last-child) {
@@ -120,9 +132,8 @@
   top: 0;
   left: 25%;
   height: 100vh;
-  background-image: url(../Imgs/blood.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100%;
+  
 }
 
 .regua {
@@ -193,9 +204,27 @@
 }
 
 .graph {
-  width: 80%;
+  width: 60%;
   margin: auto;
-  padding-top: 10px;
+
+  
+}
+
+#canvas_grafico1{
+
+  background-color: rgba(255, 255, 255, 0.667);
+  border-radius: 10px;
+
+}
+
+
+#canvas_grafico2{
+  
+  
+  background-color: rgba(255, 255, 255, 0.667);
+  border-radius: 10px;
+  backdrop-filter: blur(2.0px);
+
 }
 
 .tituloGraficos {
@@ -213,6 +242,7 @@
   color: #e60000;
   background-color: white;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
+

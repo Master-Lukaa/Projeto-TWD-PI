@@ -25,6 +25,7 @@
    
                <a href="index.html"> Home </a>
                <a href="index.html"> Sobre </a>
+               <a href="dashboard/personagens.html"> Personagens </a>
                <a href="#">Comprar</a>
                <a class="btn-menu"  href="index.html"> Voltar </a>
    
@@ -58,7 +59,19 @@
                     <input class="senha" id="senha_input" type="password" >
 
                     <span >Confirme sua senha:</span>
-                    <input class="senha" id="confirmacao_senha_input" type="password" >
+                    <input class="senha" id="confirmacao_senha_input" type="password" ><br>
+                     <span class="titleProta"><p>Escolha seu Protagonista Preferido:</p></span>   
+                   
+                    <select class="selectBrabo" name="brabos" id="brabos">
+                    <option value="1">1 - Clementine</option>
+                    <option value="2">2 - Lee Everett </option>
+                    <option value="3">3 - Kenny</option>
+                    <option value="4">4 - Ravier Garcia</option>
+                    <option value="5">5 - Louis</option>
+                    <option value="6">6 - Luke</option>
+                    <option value="7">7 - Michonne</option>
+                    <option value="8">8 - Kate Garcia</option>
+                    </select>
 
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
                     <h3>Já possui conta? <a href="login.html"> Entre agora</a></h3>
@@ -89,8 +102,10 @@
         var telefoneVar = telefone_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var braboVar = brabos.value
+     
 
-        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || braboVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos" ;
 
@@ -127,6 +142,7 @@
                 emailServer: emailVar,
                 telefoneServer: telefoneVar,
                 senhaServer: senhaVar,
+                braboServer: braboVar
             })
         }).then(function (resposta) {
 
@@ -161,5 +177,6 @@
         cardErro.style.display = "none"
     }
     }
-    
+
+  
 </script>

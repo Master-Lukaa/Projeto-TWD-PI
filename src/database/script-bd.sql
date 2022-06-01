@@ -18,7 +18,7 @@ season int,
 qtd_curtida int
 );
 
-create table temporada_preferida (
+create table temporada_preferida(
 fk_usuario int,
 foreign key (fk_usuario) references  usuario(id),
 fk_temporada int,
