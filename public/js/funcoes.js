@@ -42,22 +42,56 @@ function finalizarAguardar(texto) {
     var divErrosLogin = document.getElementById("div_erros_login");
     if (texto) {
         divErrosLogin.innerHTML = texto;
+        divAguardar.style.display = "none";
     }
+    
 }
 
 
+function mostrarCardHome() {
+ 
+    
+    var qtdCard = 0;
+    var card = document.querySelector("#cardHome") ;
 
+    var titleDescricao =  [ 
+        "Empolgante", 
+        "Envolvente",
+        "Emocionante"
+     
+     ];
+    var descricao =  [ 
+        "Do começo ao fim", 
+        "Uma história rica em detalhes",
+        "Você vai se emocionar"
+     
+     ];
+
+     while (qtdCard < titleDescricao.length  ) {
+         
+        card.innerHTML += `<div class="diferencial">
+                          <h2>${titleDescricao[qtdCard]}</h2>
+                          <p>${descricao[qtdCard]}</p> 
+                          </div>`   
+
+                          qtdCard++
+
+}
+
+} 
+    
+
+
+    
 
 /*  Mostrar Seasons */
 
-
-
-function mostrarSeason() {
+function mostrarPersonagem() {
  
     
 var qtdPersonagem = 8;
-var personagem =  document.querySelector("#seasons") ;
-var personagemNumber = [
+var personagem =  document.querySelector("#personagem") ;
+var nome = { "personagem" : [ 
     "Clementine", 
     "Lee Everett ",
     "Kenny",
@@ -67,52 +101,39 @@ var personagemNumber = [
     "Michonne",
     "Kate Garcia",
    
-   
- ];
+   ]};
 
-var  imgPersonagem = [
-    "../Imgs/clementine-character.png",
+ 
+
+var  imagem = { "personagem": [ "../Imgs/clementine-character.png", 
     "../Imgs/lee-character.png",
     "../Imgs/ken-character.png",
     "../Imgs/ravier-character.png",
     "../Imgs/louis-character.png",
     "../Imgs/luke-character.png",
     "../Imgs/michonne-character.png",
-    "../Imgs/kate-character.png",
+    "../Imgs/kate-character.png"
   
-     ];
+]} ;
   
-     var  personagemName = [
-        "1", 
-        "2",
-        "3",     
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-    
-    ];
-  
-  
+     var numero = { "personagem":  [ "1", "2", "3", "4","5","6","7","8",] }
+
   
 for (var  cont = 0; cont < qtdPersonagem; cont++) {
     personagem.innerHTML += `
-   <div class="card-temporada">
-        <div class="card-header" >
-            <img src='${imgPersonagem[cont]}' class="card-img"/>
+   <div class="card-personagem">
+        <div class="card-imagem" >
+            <img src='${imagem.personagem[cont]}' class="card-img"/>
         </div>
        <div class="card-body">
-        <h2 class="card-titulo">${personagemNumber[cont]}</h2>
-        <h3>${personagemName[cont]}</h3>
+        <h2 class="card-titulo">${nome.personagem[cont]}</h2>
+        <h3>${numero.personagem[cont]}</h3>
        </div>
      
       </div>`
 
 } 
 
-
-
-
-
 }
+
+

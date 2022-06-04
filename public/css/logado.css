@@ -1,4 +1,7 @@
-.home  {
+
+/* pagina Home Dashboard */
+
+.homeDash {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -9,22 +12,16 @@
   
 }
 
-.editar-aviso{
-  background-image: url(../Imgs/twd2.jpg);
 
-   background-repeat: no-repeat;
-   background-size: 100%;
-}
+.clementine img {
 
-#form-postagem{
+  width: 100%;
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 600px;
+ 
 
-  background-color: rgb(180, 17, 17);
 
-}
-
-.janela {
-  display: flex;
-  width: 100vw;
 }
 
 .header-left a {
@@ -51,11 +48,13 @@
 
 .dash-right {
   display: flex;
+  justify-content: center;
   width: 75%;
   height: fit-content;
   position: relative;
   top: 0;
   left: 25%;
+  
 }
 
 .header-left h1 {
@@ -63,6 +62,12 @@
  
 }
 
+
+.hello {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
 
 
 .hello {
@@ -79,6 +84,39 @@
 
 .hello h3 span {
   font-weight: 800;
+}
+
+
+
+
+/* pagina Mural de comentários*/
+
+.mural{
+
+  background-image: url(../Imgs/twdhomee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.editar-aviso{
+  background-image: url(../Imgs/twd2.jpg);
+
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+
+.janela {
+  display: flex;
+  width: 100vw;
+}
+
+
+#form-postagem{
+
+  background-color: rgb(180, 17, 17);
+
 }
 
 .btn-nav {
@@ -122,24 +160,4 @@
   padding: 10px 15px;
   margin-bottom: 100px;
   cursor: pointer;
-}
-
-
-
-.clementine img {
- 
-  width: 100%;
-  margin-top: 45px;
-  border-radius: 20px;
-  height: 600px;
- 
-
-
-}
-
-.mural{
-
-  background-image: url(../Imgs/twdhomee.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }

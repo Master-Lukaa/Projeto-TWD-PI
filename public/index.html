@@ -12,24 +12,26 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
      <link rel="shortcut icon" href="Imgs/zumbi.png" type="image/x-icon">
+     <script src="js/funcoes.js"></script>
 
 </head>
-<body>
+<body class="home" onload="mostrarCardHome()">
    
 
   <div class="header">
 
         <div class="center">
 
-        <div  class="titulo"> <h2 >The walking Dead</h2>
+        <div class="titulo"> <h2 >The walking Dead</h2>
     </div>
 
         <div class="menu">
 
             <a href="index.html"> Home </a>
             <a href="#sobre"> Sobre </a>
+            <a href="./history.html"> História </a>
             <a href="dashboard/personagens.html"> Personagens </a>
-            <a href="https://store.skybound.com/collections/the-walking-dead-games-video-games/products/telltales-the-walking-dead-the-telltale-definitive-series-standard-edition">Comprar</a>
+          <a  target="_blank" href="https://store.skybound.com/collections/the-walking-dead-games-video-games/products/telltales-the-walking-dead-the-telltale-definitive-series-standard-edition">Comprar game</a>
             <a class="btn-menu"  href="Cadastro.html"> Cadastro | Login </a>
 
         </div>
@@ -41,37 +43,22 @@
     <div class="center" >
      <div class="gameTitle">
  
-        <h2>Prepare-se</h2>
+        <h2 >Prepare-se</h2>
         <p>Para sua proxima aventura</p>
-        <button><a class="btn-acao" href="cadastro.html">Entre na ação</a> </button>
+        <button><a class="btn-acao" target="_blank" href="https://store.skybound.com/collections/the-walking-dead-games-video-games/products/telltales-the-walking-dead-the-telltale-definitive-series-standard-edition">Entre na ação</a> </button>
 
      </div>
 
-     <div class="cardsGame" >
-         <div class="diferencial">
-          <h2>Empolgante</h2>
-             <p>Do começo ao fim</p> 
-         </div>
-
-         <div class="diferencial">
-            <h2>Envolvente</h2>
-             <p>Uma história rica em detalhes</p>
-           </div>
-
-         <div class="diferencial">
-            <h2>Emocionante</h2>
-             <p>Tu vai chorar</p>
-         </div>
-
-   
+     <div class="cardsGame" id="cardHome" >
          
+    </div>
 
-         </div> 
+</div> 
     </div>
 
 </div>
     
-
+<div class="sessao-home" >
 <div class="sobre" > 
  <div class="center" >
  <div class="game-sobre">
@@ -100,11 +87,11 @@
        
 
    </div>
-
+ </div>
+</div>
 </div>
 
-</div>
-
+<div class="sessao-jogabilidade" >
 <div class="sobre" > 
  <div class="center" >
  <div class="game-sobre">
@@ -112,9 +99,9 @@
     <h2>Jogabilidade</h2>
 </div>
 
-<div id="sobre" class="conteudo-sobre">
+<div  class="conteudo-sobre">
 
-    <div class="img-jogabilidade"><p> <img style="width: 600px; height: 400px;" " src="Imgs/controle.jpg" alt=""></p></div>
+    <div class="gif-jogabilidade"><p> <img style="width: 600px; height: 400px;" " src="Imgs/clem-louis.gif" alt=""></p></div>
 
     <p>The Walking Dead é uma aventura gráfica, jogado a partir de uma perspectiva de terceira pessoa, com uma variedade de ângulos de câmera cinematográfica, em que o jogador, é o protagonista Lee Everett, trabalha com um grupo desorganizado de sobreviventes para se manter vivo no meio de um apocalipse zumbi. Algumas partes do jogo exigem respostas cronometradas a partir do jogador, muitas vezes levando a decisões importantes que terão impacto a historinha do jogo, na forma de role-playing games (RPGs).
     Algumas conversas exigem que o jogador faça uma escolha dentro de um tempo limitado, caso contrário, Lee vai permanecer em silêncio, o que pode afetar a forma como outros personagens respondem a ele. Ao contrário de outros RPGs, onde as escolhas caem em cada lado de um "bem ou mal" , as escolhas dentro de The Walking Dead tem resultados ambíguos, tendo um efeito sobre a atitude dos personagens NPCs (não-jogáveis) para com Lee.
@@ -123,9 +110,8 @@
     Em cenas de ação, o jogador deve executar certas ações em tempo rápido (QTEs), de modo a manter a si mesmo ou outros personagens vivos. </p>
 
       </div>
-    
+    </div>
 </div>
-
 </div>
 
 <div class="sobre" > 
@@ -136,7 +122,7 @@
     </h2>
 </div>
 
-<div id="sobre" class="conteudo-sobre">
+<div  class="conteudo-sobre">
 
     <div class=" video">
 
@@ -147,7 +133,24 @@
       </div>
     
 </div>
+</div>
 
+<div class="sessao-votar" >
+<div class="sobre" > 
+
+<div class="gameTitle">
+ 
+   <p style="color: white;"> Votação - BRABOS do TWD</p>
+    <button><a class="btn-acao" href="dashboard/personagens.html">Cadastre-se agora e vote em seu protagonista preferido de TWD</a> </button>
+
+    
+<div class="zumbi-home">
+    <img class="zumbi" src="Imgs/zumbi.gif">
+    <img class="frase" src="Imgs/frase.png">
+   </div>
+ </div>
+
+</div>
 </div>
 
 

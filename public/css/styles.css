@@ -1,5 +1,7 @@
-*{
+@import url('http://fonts.cdnfonts.com/css/zombie');
 
+/* pagina Index*/
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -8,8 +10,33 @@
 
 html{
  
+scroll-behavior: smooth;
 
-    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 10px;
+}
+
+
+.home{
+    
+    background-image: url(../Imgs/blood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
 }
 
 .center{
@@ -22,10 +49,6 @@ html{
 
 }
 
-.img{
-    width: 30px;
-    
-}
 
 .header{
 
@@ -35,22 +58,73 @@ html{
 
 }
 
+
+.menu{
+
+    width: 80%;
+    text-align: right;
+
+}
+
+
+
+.menu a{
+
+    color:red;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+.menu .btn-menu{
+
+    background-color: red ;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 8px;
+    
+    
+    }
+
+    
+.menu .btn-menu:hover{
+
+    background-color: rgb(77, 0, 0);
+    color: white;
+
+}
+
+    
+
+.img{
+    width: 30px;
+    
+}
+
+button a{
+ 
+    text-decoration: none;
+
+
+}
+
+.img-home img{
+
+
+border-radius: 20px;
+width: 600px;
+
+}
+
+
+
 .titulo{
 
 color:red;
 font-weight: bold;
 
-
-
-
-}
-
-.menu a{
-
-color:red;
-text-decoration: none;
-margin-right: 20px;
-
+                                                
 
 
 }
@@ -60,37 +134,12 @@ margin-right: 20px;
 .titulo h2{
 
 font-weight: normal;
-font-size: 22px;
-
-
-
-
-}
-
-.menu .btn-menu{
-
-background-color: red ;
-display: inline-block;
-padding: 8px 16px;
-color: white;
-border-radius: 8px;
-
-
-}
-.menu .btn-menu:hover{
-
-    background-color: rgb(77, 0, 0);
-    color: white;
+font-size: 30px;
+font-family: 'Zombie', sans-serif;
+                                                
 
 }
 
-.menu{
-
-    width: 80%;
-    text-align: right;
-
-
-}
 
 
 
@@ -152,15 +201,37 @@ margin-bottom: 25px;
     color: white;
 
 }
+
+
+.btn-acao{
+
+    text-decoration: none;
+    color: white;
+    
+     } 
+
+     .votacao {
+
+        color: white;
+
+     }
+
 .cardsGame{
 
     display: flex;
     
-
-   
-
-
 }
+
+
+.cardsGame{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    
+    }
+    
 
 .diferencial{
 
@@ -207,24 +278,14 @@ margin-bottom: 25px;
 
 .sobre{
 
-    padding: 80px 0 ;
-    background-image: url(../Imgs/blood.jpg);
+    padding: 80px 0  ;
+    background-color: rgba(26, 4, 8, 0.696);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+   
     
-
-
-}
-
-.cardsGame{
-text-align: center;
-width: 100%;
-display: flex;
-justify-content: space-evenly;
-margin-left: 25px;
-
 }
 
 .conteudo-sobre{
@@ -247,7 +308,8 @@ font-size: 14px;
 color: black;
 width: 100%;
 margin:  20px 20px;
-
+display: flex;
+justify-content: center;
 
 
 }
@@ -268,40 +330,57 @@ text-transform: uppercase;
 color: white;
 }
 
-.footer{
+.gif-jogabilidade{
 
-width: 100%;
-color: white;
-height: 50px;
-background-color: black;
-border-top: 2px solid red;
+
+    justify-content: space-around;
+    padding-right: 20px;
+   
+    
+   
+}
+
+.gif-jogabilidade img{
+
+    border-radius: 30px;
+}
+
+
+.video iframe{
+
+    border-radius: 30px;
+    width: 900px;
+    height: 500px;
 
 }
 
-.footer p{
+.votacao{
 
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+   .footer{
+
+    width: 100%;
+    color: white;
+    height: 50px;
+    background-color: black;
+    border-top: 2px solid red;
+    
+    }
+    
+    .footer p{
     display: flex;
     justify-content: center;
     padding-top:  15px;
-
-}
-
-button a{
- 
-    text-decoration: none;
+    
+    }
 
 
-}
-
-.img-home img{
-
-
-border-radius: 20px;
-width: 600px;
-
-}
-
-/* erros */
+/* Alerta de erros */
 
 .alerta_erro{
   
@@ -341,55 +420,88 @@ width: 600px;
   }
 
 
-.video{
+  /* Pagina História */
 
-    margin-left:370px;
-     border-radius: 30px;
-    
+  .conteudo-sobre{
+
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+.history{
+    background-image: url(../Imgs/twd.jpg);
+    padding: 350px 0  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 
 }
 
-.video iframe{
+.history h2{
 
-    border-radius: 30px;
-    width: 700px;
-    height: 400px;
+color: #e60000;
+font-size: 50px;
 
-    
 }
 
-.img-jogabilidade{
+.season1{
+background-image: url(../Imgs/twdhomee.jpg);
 
-    margin-left: 60px;
-    justify-content: space-around;
-    padding-right: 20px;
-    
-   
 }
 
+.season2{
+    background-image: url(../Imgs/clemblood.jpg);
+    background-size: 135%;
+    }
 
-.btn-acao{
+.season3{
+        background-image: url(../Imgs/season3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-text-decoration: none;
-color: white;
+    .season4{
+        background-image: url(../Imgs/season4.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .sessao-home{
+
+   background-image: url(../Imgs/clemblood.jpg);
+
+    }
+    .sessao-jogabilidade{
+
+   background-image: url(../Imgs/controle.jpg);
+   background-size: 100%;
+
+    }
+    .sessao-votar{
+
+   background-image: url(../Imgs/brabos.jpg);
+   background-size: cover;
+
+    }
+
+    .zumbi-home  {
+
+        display: flex;
+        justify-content: space-evenly;
+
+        
+    }
+    .frase{
+
+        position:absolute;
+      }
+
+         .zumbi{
+
+           margin-right: 30px;
 
 
-} .img-jogabilidade{
-
-
-    border-radius: 40px;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #ff0000;
-    border-radius: 10px;
-}
+         }

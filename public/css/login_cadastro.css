@@ -1,3 +1,6 @@
+
+/* pagina Cadastro*/
+
 .body-cadastro{
         margin:0;
         padding: 0;
@@ -8,73 +11,72 @@
         background-attachment: fixed;
         background-size: cover;
      
-      
-        
-        }
+      }
 
-      .titleProta {
-      
-        font-weight: 900;
-        font-size: 14px;
+            
+          .card-cadastro{
+            color: #fff;
+            width: 400px;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.059);
+            backdrop-filter: blur(3.0px);
+            border: 1px solid red;
 
-        }
-        
- .card-cadastro{
-        color: #fff;
-        width: 400px;
-        height: 480px;
+          }
+
+
+          .card-cadastro h2{
+              
+            padding: 20px;
+          }
+
+          .container-cadastro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            
+          }
+
+            .titleProta {
+                
+            font-weight: 900;
+            font-size: 14px;
+
+            }
+  
+    
+    
+     .form{
+    
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.059);
-        backdrop-filter: blur(3.0px);
-        border: 1px solid red;
-   
-      }
-    
-   .container-cadastro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
+        padding-bottom: 20px;
+        width: 250px;
         
-       }
+        }
     
-    
-    .card-cadastro h2{
-    
+        .form span {
         
-        padding: 20px;
-       }
-    
-    .form{
-    
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    width: 250px;
-    
-    }
-    
-    .form span {
-    
-    font-weight: 700;
-    padding: 3px;
-    }
-    
-    .form input{
-    
-        outline: 1px solid red;
-        padding:5px;
-        border: 0;
-        border-radius: 10px;
-        padding-left: 28px;
+        font-weight: 700;
+        padding: 3px;
+        }
+        
+        .form input{
+        
+            outline: 1px solid red;
+            padding:5px;
+            border: 0;
+            border-radius: 10px;
+            padding-left: 28px;
       
       
-        
-    }
+       }
 
     .form select{
       outline: 1px solid red;
@@ -85,6 +87,30 @@
 
 
     }
+
+    .form button{
+    
+      margin-top: 20px;
+      background-color: #e60000;
+      color: #fff;
+      padding: 10px 15px;
+      width: 120px;
+      align-self: center;
+      font-size: 18px;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      
+      }
+      
+      .btn:hover{
+          background-color: #000000;
+          
+          
+          }
+
+         
+        /* Input icons Cadastro*/
 
     .name{
 
@@ -115,80 +141,48 @@
 
     }
     
-    .form button{
-    
-    margin-top: 20px;
-    background-color: #e60000;
-    color: #fff;
-    padding: 10px 15px;
-    width: 120px;
-    align-self: center;
-    font-size: 18px;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-    
-    }
     
     
-     .btn:hover{
-        background-color: #000000;
-        
-        
-        }
-    
-      .footer{
+      
 
+    /* Pagina Login */
 
-    color: white;
-    background-color: black;
-    border-top: 2px solid red;
-    margin-top: 150px;
     
-    }
+  .body-login{
+    margin:0;
+    padding: 0;
+    font-family: 'barlow' sans-serif;
+    background-image: url(../Imgs/blood.jpg);
+    background-position:right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     
-    .footer p{
-    
-        display: flex;
-        justify-content: center;
-        padding-top:  15px;
-    
-    }
-
-    /* Login */
+      }
 
 .header-login{
 
-background-color: black;
+ background-color: black;
  padding: 20px 0;
  border-bottom:  1px solid red;
            
         }
         
-        .container-login{
+  .container-login{
     
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 150px;
         
   
   
       }
 
-    .body-login{
-        margin:0;
-        padding: 0;
-        font-family: 'barlow' sans-serif;
-        background-image: url(../Imgs/blood.jpg);
-        background-position: center;
-        background-size: cover;
-    
-      }
   .card-login{
     
-  color: #fff;
-  font-weight: 600;
+     color: #fff;
+     font-weight: 600;
     width: 400px;
     height: 350px;
     display: flex;
@@ -199,6 +193,11 @@ background-color: black;
      border: 1px solid red;
     
       }
+
+      .card-login h2{
+    
+        padding: 20px;
+       }
 
       h3{
 
@@ -224,9 +223,22 @@ background-color: black;
       color: white;
      }
 
-     .card-login h2{
     
-        
-      padding: 20px;
-     }
   
+     .footer{
+
+
+      color: white;
+      background-color: black;
+      border-top: 2px solid red;
+      margin-top: 150px;
+      
+      }
+      
+      .footer p{
+      
+          display: flex;
+          justify-content: center;
+          padding-top:  15px;
+      
+      }
