@@ -1,6 +1,6 @@
 var database = require("../database/config");
 
-function buscarUltimasMedidas(idAquario, limite_linhas) {
+function buscarUltimasMedidas(idUsuario) {
     
     instrucaoSql = ''
     
@@ -11,12 +11,12 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
                         momento,
                         CONVERT(varchar, momento, 108) as momento_grafico
                     from medida
-                    where fk_aquario = ${idAquario}
+                    where fk_aquario = ${idUsuario}
                     order by id desc`;
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
         instrucaoSql = `select protagonista.nome, count(usuario.id) as quantidade
         from usuario join protagonista
-        on usuario.FK_protagonista = protagonista.id group by protagonista.nome;`;
+        on usuario.FK_protagonista = protagonista.id group by protagonista.id;`;
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
@@ -26,7 +26,7 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
     return database.executar(instrucaoSql);
 }
 
-function buscarMedidasEmTempoReal(idAquario) {
+function buscarMedidasEmTempoReal(idProtagonista) {
     
     instrucaoSql = ''
     
@@ -41,7 +41,7 @@ function buscarMedidasEmTempoReal(idAquario) {
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
         instrucaoSql = `select protagonista.nome, count(usuario.id) as quantidade
         from usuario join protagonista
-        on usuario.FK_protagonista = protagonista.id group by protagonista.nome;`;
+        on usuario.FK_protagonista = protagonista.id where protagonista.id  group by protagonista.nome`;
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
