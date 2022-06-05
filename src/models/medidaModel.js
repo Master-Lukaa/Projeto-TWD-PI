@@ -1,6 +1,6 @@
 var database = require("../database/config");
 
-function buscarUltimasMedidas(idUsuario) {
+function buscarUltimasMedidas() {
     
     instrucaoSql = ''
     
@@ -26,7 +26,7 @@ function buscarUltimasMedidas(idUsuario) {
     return database.executar(instrucaoSql);
 }
 
-function buscarMedidasEmTempoReal(idProtagonista) {
+function buscarMedidasEmTempoReal() {
     
     instrucaoSql = ''
     

@@ -16,7 +16,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-   justify-content: center;
+     justify-content: center;
 
   }
 
@@ -82,11 +82,7 @@ margin-bottom: 5%;
     transition: 0.3s;
     color: #fff;
     float: left;
-    cursor: pointer;
-   
     
-   
-  
   }
   
   
