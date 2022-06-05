@@ -39,6 +39,16 @@ scroll-behavior: smooth;
 
 }
 
+
+.header{
+
+    background-color: black;
+    padding: 20px 0px;
+    border-bottom:  2px solid red;
+
+}
+
+
 .center{
 
     margin: 0 auto;
@@ -49,14 +59,6 @@ scroll-behavior: smooth;
 
 }
 
-
-.header{
-
-    background-color: black;
-    padding: 20px 0;
-    border-bottom:  2px solid red;
-
-}
 
 
 .menu{
@@ -73,13 +75,13 @@ scroll-behavior: smooth;
     color:red;
     text-decoration: none;
     margin-right: 20px;
+    font-weight: 400;
     
 }
 
 .menu .btn-menu{
 
     background-color: red ;
-    display: inline-block;
     padding: 8px 16px;
     color: white;
     border-radius: 8px;
@@ -95,76 +97,47 @@ scroll-behavior: smooth;
 
 }
 
+
+   .titulo h2{
     
-
-.img{
-    width: 30px;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Zombie', sans-serif;
+    color:red;
+    font-weight: bold;                                      
     
-}
-
-button a{
- 
-    text-decoration: none;
-
-
-}
-
-.img-home img{
-
-
-border-radius: 20px;
-width: 600px;
-
-}
-
-
-
-.titulo{
-
-color:red;
-font-weight: bold;
-
-                                                
-
-
-}
-
-
-
-.titulo h2{
-
-font-weight: normal;
-font-size: 30px;
-font-family: 'Zombie', sans-serif;
-                                                
-
-}
-
-
+    }
+    
+    .btn-acao{
+    
+        text-decoration: none;
+        color: white;
+        
+         } 
+    
 
 
 .principal{
 
     background-image: url(../Imgs/twd.jpg);
-    padding: 150px 0  ;
+    padding: 150px 0 ;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 
-
 }
 
-.gameTitle{
 
-    width: 100%;
+.title{
+
     text-align: center;
     text-decoration: none;
 
 
 }
 
-.gameTitle h2{
+.title h2{
 
     color: black;
     font-size: 40px;
@@ -172,7 +145,7 @@ font-family: 'Zombie', sans-serif;
 
 }
 
-.gameTitle p{
+.title p{
 
 color: black;
 font-size: 19px;
@@ -180,10 +153,9 @@ margin: 10px 0;
 
 }
 
-.gameTitle button{
+.title button{
 
 background-color: red;
-display: inline-block;
 padding: 8px 30px;
 color: white;
 border-radius: 6px;
@@ -196,34 +168,33 @@ margin-bottom: 25px;
 
 }
 
-.gameTitle button:hover{
+.title button:hover{
     background-color: rgb(77, 0, 0);
     color: white;
 
 }
 
 
-.btn-acao{
 
-    text-decoration: none;
-    color: white;
-    
-     } 
+.img-home img{
 
-     .votacao {
 
-        color: white;
+border-radius: 20px;
+width: 600px;
 
-     }
-
-.cardsGame{
-
-    display: flex;
-    
 }
 
 
+.votacao {
+
+    color: white;
+
+     }
+
+
+
 .cardsGame{
+    display: flex;
     text-align: center;
     width: 100%;
     display: flex;
@@ -272,27 +243,21 @@ margin-bottom: 25px;
     text-align:center;
     font-weight: 700;
 
-
 }
 
 
-.sobre{
+.styleSobre{
 
     padding: 80px 0  ;
     background-color: rgba(26, 4, 8, 0.696);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-   
-    
+  
 }
 
 .conteudo-sobre{
     display: flex;
     
 }
-.game-sobre p{
+.fontSobre p{
 
 color: white;
 font-size: 14px;
@@ -302,12 +267,18 @@ margin: 10px 0 ;
 
 }
 
+.fontSobre h2{
+
+    text-transform: uppercase;
+    color: white;
+    }
+
 .conteudo-sobre{
 
 font-size: 14px;
 color: black;
 width: 100%;
-margin:  20px 20px;
+margin: 20px 20px;
 display: flex;
 justify-content: center;
 
@@ -324,11 +295,7 @@ justify-content: center;
 
 }
 
-.game-sobre h2{
 
-text-transform: uppercase;
-color: white;
-}
 
 .gif-jogabilidade{
 
@@ -336,13 +303,13 @@ color: white;
     justify-content: space-around;
     padding-right: 20px;
    
-    
-   
 }
 
 .gif-jogabilidade img{
 
     border-radius: 30px;
+    width: 600px; 
+    height: 400px;
 }
 
 
