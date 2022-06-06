@@ -41,4 +41,12 @@ select * from aviso;
 select * from protagonista;
 select * from usuario;
 
+select u.nome as 'Nome do usuário', p.nome as 'Protagonista Preferido' 
+from usuario as u
+join protagonista as p
+on p.id = u.fk_protagonista;
+
+select * from usuario as u
+join aviso as a
+on a.fk_usuario = u.id
 
