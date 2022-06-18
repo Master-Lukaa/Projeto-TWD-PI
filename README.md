@@ -12,6 +12,8 @@ Esse projeto tem como objetivo fazer você jogar The Walking Dead da Telltale Ga
 - NodeJs - API 
 - MySQL -  Gerenciamento do banco de dados
 
+## Projeto individual feito  para o curso de ADS na SPTECH !
+
 
 
 ![sptech-dead](https://user-images.githubusercontent.com/78982351/167239275-627146d4-711f-4328-aed8-00db106af7e5.jpg)
