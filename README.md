@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-Esse projeto tem como objetivo fazer você jogar The Walking Dead da Telltale Games Series, que é um jogo de videogame episódico que ocorre dentro do universo da série de quadrinhos de Robert Kirkman. O jogo foi desenvolvido e publicado pela Telltale Games, associados a Skybound Entertainment. A primeira Temporada de The Walking Dead - A Telltale Series redefiniu as expectativas para narrativas em videogames e ganhou mais de 100 prêmios de Jogo do Ano. o game é deslumbrante e emocionante, você tem que jogar irmão :)
+Esse projeto individual foi feito para o curso de ADS na SPTECH  e tem como objetivo fazer você jogar The Walking Dead da Telltale Games Series, que é um jogo de videogame episódico que ocorre dentro do universo da série de quadrinhos de Robert Kirkman. O jogo foi desenvolvido e publicado pela Telltale Games, associados a Skybound Entertainment. A primeira Temporada de The Walking Dead - A Telltale Series redefiniu as expectativas para narrativas em videogames e ganhou mais de 100 prêmios de Jogo do Ano. o game é deslumbrante e emocionante, você tem que jogar irmão :)
 
 
 ## Tecnologias
@@ -11,8 +11,6 @@ Esse projeto tem como objetivo fazer você jogar The Walking Dead da Telltale Ga
 - JavaScript - Funcionalidades do site
 - NodeJs - API 
 - MySQL -  Gerenciamento do banco de dados
-
-## Projeto individual feito  para o curso de ADS na SPTECH !
 
 
 
